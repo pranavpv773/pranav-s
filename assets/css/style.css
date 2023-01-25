@@ -981,10 +981,15 @@ section {
 }
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #0096FF;
+  color: #fff;
   border-radius: 50%;
   padding: 15px;
   background: #ADD8E6;
+}
+.contact .info-box i.bx:hover {
+
+  color: #0096FF;
+ 
 }
 .contact .info-box h3 {
   font-size: 20px;
@@ -1072,7 +1077,7 @@ section {
   box-shadow: none;
   font-size: 14px;
 }
-.contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   background-color: #0096FF;
 }
 .contact .php-email-form input {
