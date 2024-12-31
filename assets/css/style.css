@@ -410,7 +410,7 @@ section {
 }
 
 .section-bg {
-  background-color: white;
+  background-color: black;
 }
 
 .section-title {
@@ -773,7 +773,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/mobile.jpeg") no-repeat;
+  background: url("../img/portfolio/bg_testmonial.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
