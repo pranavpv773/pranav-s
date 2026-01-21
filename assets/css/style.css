@@ -1,6 +1,64 @@
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+} */
+
+/* Dark Mode Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #444444;
+  --heading-color: #3b434a;
+  --section-bg: #f4f5f6;
+  --card-bg: #ffffff;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --section-bg: #1a1a1a;
+  --card-bg: #1e1e1e;
+  --box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Apply variables to existing styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  /* Smooth transition */
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title h2,
+.about .content h3 {
+  color: var(--heading-color) !important;
+} */
+
+.section-bg {
+  background-color: var(--section-bg) !important;
+}
+
+/* Update cards and boxes */
+.services .icon-box,
+.pricing .box,
+.contact .info-box,
+.contact .php-email-form {
+  background: var(--card-bg) !important;
+  box-shadow: 0 0 30px var(--box-shadow) !important;
+  color: var(--text-color) !important;
+}
+
+/* Ensure Portfolio/Resume titles are visible */
+.resume .resume-title,
+.portfolio-details .portfolio-info h3 {
+  color: var(--heading-color);
 }
 
 a {
@@ -20,6 +78,47 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+
+.dark-mode-btn {
+  background: #0096FF;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+/* The Bubble Cursor */
+.bubble-cursor {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 150, 255, 0.3);
+  /* Your brand blue with transparency */
+  border: 2px solid #0096FF;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /* Allows you to click through the bubble */
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+  /* The 'spring' delay */
+  transform: translate(-50%, -50%);
+}
+
+/* Optional: Hide the default cursor */
+body {
+  cursor: none;
+}
+
+/* Make the bubble grow when hovering over links */
+.bubble-grow {
+  transform: translate(-50%, -50%) scale(2);
+  background-color: rgba(125, 249, 255, 0.5);
 }
 
 /*--------------------------------------------------------------
@@ -305,12 +404,13 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/20221130_235825_0000.png") top right;
+  height: 90vh;
+  background: url("../img/pv.jpeg") top right;
   background-size: contain;
   background-position: center center;
   position: relative;
 }
+
 
 #hero:before {
   content: "";
@@ -602,8 +702,8 @@ section {
 }
 
 .about .image {
-  background: url("../img/pv.jpeg") center center no-repeat;
-  background-size: cover;
+  background: url("../img/pv2.jpeg") left center no-repeat;
+  background-size: 110%;
   min-height: 500px;
 }
 
