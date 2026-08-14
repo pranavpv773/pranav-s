@@ -176,22 +176,48 @@
   }
 
   /**
+   * Footer year
+   */
+  const yearEl = select('#year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /**
+   * Theme toggle
+   */
+  const toggleBtn = select('#dark-mode-toggle');
+  if (toggleBtn) {
+    const icon = toggleBtn.querySelector('i');
+    const applyTheme = (mode) => {
+      document.documentElement.classList.toggle('light-mode', mode === 'light');
+      document.body.classList.toggle('light-mode', mode === 'light');
+      if (icon) icon.className = mode === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+      localStorage.setItem('theme', mode);
+    };
+    applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+    toggleBtn.addEventListener('click', () => {
+      applyTheme(document.documentElement.classList.contains('light-mode') ? 'dark' : 'light');
+    });
+  }
+
+  /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  if (select('.testimonials-slider')) {
+    new Swiper('.testimonials-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  }
 
   /**
    * Porfolio isotope and filter
@@ -231,18 +257,20 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  if (select('.portfolio-details-slider')) {
+    new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  }
 
 })()

@@ -4,51 +4,42 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio | Pranav</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <title>Portfolio | Pranav PV</title>
   <link href="assets/img/favicon1.webp" rel="icon">
   <link href="assets/img/apple.webp" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script>if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light-mode');</script>
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
-
+  <header id="header" class="fixed-top">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">PV</span>
+      <span class="brand-name">Pranav</span>
+    </a>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-        <li><a class="nav-link scrollto" href="about.html">About</a></li>
-        <li><a class="nav-link scrollto" href="services.html">Services</a></li>
-        <li class="dropdown"><a href="#"><span>portfolio</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="portfolio-details.html">Portfolio Details</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link active" href="portfolio.html">Work</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
-  </header><!-- End Header -->
+    </nav>
+    <div class="header-end">
+      <button id="dark-mode-toggle" class="theme-btn" type="button" aria-label="Toggle color theme"><i class="bi bi-sun-fill"></i></button>
+      <a href="contact.html" class="nav-cta">Let’s talk</a>
+    </div>
+  </header>
 
   <main id="main">
       <!-- ======= Breadcrumbs ======= -->
@@ -71,11 +62,11 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
   
-          <div class="section-title">
-            <span>My Portfolio</span>
-            <h2>My Portfolio</h2>
+          <div class="section-head">
+            <span class="kicker">04 — Selected work</span>
+            <h2>Apps, sites, <em>& marks</em></h2>
           </div>
-  
+
           <ul id="portfolio-flters" class="d-flex justify-content-center">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-card">Logo</li>
@@ -175,22 +166,17 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Pranav Pv</h3>
-      <p>Hi,If you are here that means you need a website,app or logo.Feel free to ask any questions.</p>
+      <h3>Pranav PV</h3>
+      <p>Flutter, the web, and identity — from Kerala.</p>
       <div class="social-links">
         <a href="https://twitter.com/PranavP19994078" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/pranav.hilarikanz/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/hilarikanz/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.instagram.com/pranav_pv_28/" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="https://www.linkedin.com/in/pranav-pv-10266b236/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Pranav</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="#">Pranav pv</a>
-      </div>
+      <div class="copyright">&copy; <strong>Pranav PV</strong>. All rights reserved.</div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

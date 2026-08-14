@@ -5,409 +5,266 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pranav PV</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Pranav PV — Flutter & Full-Stack Developer</title>
+  <meta name="description" content="Pranav PV is a Flutter and full-stack developer from Kerala, building mobile apps, websites, and brand identities.">
+  <meta name="keywords" content="Pranav PV, Flutter developer, full stack, mobile app, Kerala">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon1.webp" rel="icon">
   <link href="assets/img/apple.webp" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
-    rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Vendor CSS Files -->
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-
-  <!-- ======================================================== -->
+  <script>
+    if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light-mode');
+  </script>
 </head>
 
 <body>
+  <div class="noise"></div>
   <div id="bubble" class="bubble-cursor"></div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+  <header id="header" class="fixed-top header-transparent">
+    <a href="#hero" class="brand scrollto">
+      <span class="brand-mark">PV</span>
+      <span class="brand-name">Pranav</span>
+    </a>
 
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <!-- <li><a class="nav-link scrollto" href="#resume">Resume</a></li> -->
         <li><a class="nav-link scrollto" href="#services">Services</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-        <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
-        <!-- <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-          </ul> -->
-        </li>
+        <li><a class="nav-link scrollto" href="#portfolio">Work</a></li>
+        <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
-      <button id="dark-mode-toggle" class="dark-mode-btn">
-        <i class="bi bi-moon-fill"></i> </button>
       <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
+    </nav>
 
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <h1 style="color: white">PRANAV PV</h1>
-      <h2 style="color: white">I'm a Professional FullStack Developer <strong>&</strong> Mobile App Developer</h2>
-      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    <div class="header-end">
+      <button id="dark-mode-toggle" class="theme-btn" type="button" aria-label="Toggle color theme">
+        <i class="bi bi-sun-fill"></i>
+      </button>
+      <a href="#contact" class="nav-cta scrollto">Let’s talk</a>
     </div>
-  </section><!-- End Hero -->
+  </header>
+
+  <section id="hero">
+    <div class="hero-orb hero-orb-a"></div>
+    <div class="hero-orb hero-orb-b"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="live-dot"></span>
+          Available for freelance · Kerala, India
+        </p>
+        <h1>Pranav <em>PV</em></h1>
+        <p class="hero-role">Full-stack developer & Flutter engineer</p>
+        <p class="hero-lead">
+          I design and ship mobile products, websites, and brand marks —
+          the kind of work that feels considered, fast, and a little cinematic.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn-solid scrollto">See the work</a>
+          <a href="#contact" class="btn-ghost scrollto">Start a project</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>04+</strong>
+            <span>Years shipping</span>
+          </div>
+          <div>
+            <strong>20+</strong>
+            <span>Products built</span>
+          </div>
+          <div>
+            <strong>03</strong>
+            <span>Happy clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <figure class="hero-frame">
+          <img src="assets/img/pv.jpeg" alt="Portrait of Pranav PV">
+          <figcaption>Studio, 2024</figcaption>
+        </figure>
+        <div class="hero-chip">Flutter · Firebase · Dart</div>
+      </div>
+    </div>
+
+    <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Flutter</span><span>Dart</span><span>Firebase</span><span>GetX</span><span>Bloc</span><span>Provider</span><span>Cubit</span><span>Git</span><span>Web Design</span><span>Brand Identity</span>
+      <span>Flutter</span><span>Dart</span><span>Firebase</span><span>GetX</span><span>Bloc</span><span>Provider</span><span>Cubit</span><span>Git</span><span>Web Design</span><span>Brand Identity</span>
+    </div>
+  </div>
 
   <main id="main">
-    <!-- ======= About Me Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
-        <div class="section-title">
-          <span>About Me</span>
-          <h2>About Me</h2>
+        <div class="section-head">
+          <span class="kicker">01 — About</span>
+          <h2>The person behind <em>the pixels</em></h2>
         </div>
 
-        <div class="row">
-          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-          <div class="col-lg-8 d-flex flex-column align-items-stretch">
-            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="fa fa-toggle-off"></i> <strong>Name:</strong> <span>Pranav Pv</span></li>
-                    <!-- <li><i class="fa fa-toggle-off"></i> <strong>GitHub:</strong>
-                      <span>Git</span>
-                    </li> -->
-                    <!-- <li><i class="fa fa-toggle-off"></i> <strong>Phone:</strong> <span>+91 7034888756</span></li> -->
-                    <li><i class="fa fa-toggle-off"></i> <strong>City:</strong> <span>Kerala, India</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <!-- <li><i class="fa fa-toggle-off"></i> <strong>Age:</strong> <span>27</span></li> -->
-                    <li><i class="fa fa-toggle-off"></i> <strong>Degree:</strong> <span>Bsc Computer science</span></li>
-                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>pranavpv257@gmail.com</span></li> -->
-                    <li><i class="fa fa-toggle-off"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div><!-- End .content-->
+        <div class="about-bento">
+          <figure class="about-photo">
+            <img src="assets/img/pv2.jpeg" alt="Pranav PV">
+          </figure>
 
-            <div class="skills-content ps-lg-4">
-              <div class="progress">
-                <span class="skill">Flutter <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
+          <div class="about-bio">
+            <p class="lede">I’m a product-minded developer from Kerala who moves between Flutter apps, the web, and identity design without dropping the craft.</p>
+            <p>Whether it’s a delivery partner app or a photography studio site, I care about how it feels in the hand — pacing, type, motion, and the last 10% that makes something memorable.</p>
+            <ul class="about-facts">
+              <li><span>Name</span><strong>Pranav PV</strong></li>
+              <li><span>Based</span><strong>Kerala, India</strong></li>
+              <li><span>Degree</span><strong>BSc Computer Science</strong></li>
+              <li><span>Status</span><strong>Freelance available</strong></li>
+            </ul>
+          </div>
 
-              <div class="progress">
-                <span class="skill">Dart <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Provider <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">GetX <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Bloc <i class="val">65%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Cubit <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Firebase <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Git <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
+          <div class="about-stat">
+            <span class="stat-label">Focus</span>
+            <strong>Mobile-first products</strong>
+            <p>Native-feeling Flutter apps with Firebase backends and clean state management.</p>
+          </div>
+          <div class="about-stat">
+            <span class="stat-label">Also</span>
+            <strong>Web & identity</strong>
+            <p>Static and dynamic sites, plus logos that can actually live on a product.</p>
           </div>
         </div>
 
+        <div class="skills-content">
+          <div class="skill-group">
+            <h3>Mobile</h3>
+            <div class="chips">
+              <span>Flutter</span><span>Dart</span><span>Provider</span><span>GetX</span><span>Bloc</span><span>Cubit</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Platform</h3>
+            <div class="chips">
+              <span>Firebase</span><span>Git</span><span>REST APIs</span><span>Responsive Web</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- End About Me Section -->
-    <!-- ======= My Resume Section ======= -->
-    <!-- <section id="resume" class="resume">
-      <div class="container">
 
-        <div class="section-title">
-          <span>My Resume</span>
-          <h2>My Resume</h2>
-          <p>Self Learned Flutter Developer</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Pranav Pv</h4>
-              <p><em>Innovative and deadline-driven flutter developer with 1+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <p>
-              <ul>
-                <li>Kerala,India</li>
-                 <li>+91 7034888756</li>
-                <li>pranavpv257@gmail.com</li> -->
-    <!-- </ul>
-              </p>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Soft Skills</h4> -->
-    <!-- <p><em>Innovative and deadline-driven flutter developer with 1+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p> -->
-    <!-- <p> -->
-    <!-- <ul>
-                <li>Self leaner</li>
-                <li>Adaptability</li> -->
-    <!-- <li>pranavpv257@gmail.com</li> -->
-    <!-- </ul> -->
-    <!-- </p>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachleor of Science &amp; Computer science</h4>
-              <h5>2016 - 2019</h5>
-              <p><em>Aspire College of Advanced Studies</em></p>
-             
-            </div>
-            <div class="resume-item">
-              <h4>Software Developer Intern</h4>
-              <h5>2019 - 2020</h5>
-              <p><em>Maxlore Innovations LLP, Calicut</em></p>
-              <p>From the half of 2019 to 2020 Worked as a fullstack Developer Intern at Maxlore, and became a part of a Task Management project then finished a sample project of a library website.   </p>
-            </div>
-            
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Freelancer</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>Kerala, India </em></p>
-              <p>
-              <ul>
-                <li>Completed two projects as a fleelancer</li>
-                <li>Build  website for a Freelance Photograph Company </li>
-                <li>Built  website for a bussiness</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Mobile App Intern</h4>
-              <h5>Feb 2022 - Nov 2022</h5>
-              <p><em>Brototype, Calicut, Kerala</em></p>
-              <p>
-              <ul>
-                <h5>Projects</h5>
-                <li>Zomato Website Clone</li>
-                <li>Baskin Robbins website clone </li>
-                <li>Vivo  Website Clone(Responsive)</li>
-               </ul>
-               <ul>
-                <h5>Application Projects</h5>
-                <li>Music Player App</li>
-                <li>Tournament Lotting App </li>
-                <li>Whatsapp Clone App</li>
-                <li>Office Management App</li>
-               </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Mobile App Developer</h4>
-              <h5>Dec 2022 - Present</h5>
-              <p><em>Marlo, Chennai, TN</em></p>
-              <p> -->
-    <!-- <ul>
-                <h5>Projects</h5>
-                <li>Marlo Application</li>
-                <li>Baskin Robbins website clone </li>
-                <li>Vivo  Website Clone(Responsive)</li>
-               </ul> -->
-    <!-- </p>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
-    <!-- </section> -->
-    <!-- End My Resume Section -->
-
-
-    <!-- ======= My Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
-
-        <div class="section-title">
-          <span>My Services</span>
-          <h2>My Services</h2>
+        <div class="section-head">
+          <span class="kicker">02 — Services</span>
+          <h2>What I can <em>build with you</em></h2>
         </div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 d-flex">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Web Design</a></h4>
-              <p class="description">Build website by my standard Web Design in web industry that can drive more demand
-                of your business of services and products.</p>
+              <span class="service-index">01</span>
+              <div class="icon"><i class="bx bx-palette"></i></div>
+              <h4 class="title"><a href="#contact">Web Design</a></h4>
+              <p class="description">Layouts that feel current and considered — built to pull more demand toward your product or service.</p>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3 d-flex">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Web Development</a></h4>
-              <p class="description">With the help of my Web Development service that visitors can access fast to your
-                services and products with quick loading latest web development technology.</p>
+              <span class="service-index">02</span>
+              <div class="icon"><i class="bx bx-code-alt"></i></div>
+              <h4 class="title"><a href="#contact">Web Development</a></h4>
+              <p class="description">Fast-loading sites on modern stacks, so visitors actually reach what you’re selling.</p>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3 d-flex">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Logo Design</a></h4>
-              <p class="description">Build creative Logo Design that helps you to reach into a level of standard of a
-                well-known branded products across the world.</p>
+              <span class="service-index">03</span>
+              <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+              <h4 class="title"><a href="#contact">Logo Design</a></h4>
+              <p class="description">Marks with enough character to sit next to established brands — not clip-art, not noise.</p>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-3 d-flex">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Mobile Application</a></h4>
-              <p class="description">Develop User-friendly and fast loading Freelance Mobile App Development from where
-                you will get repeated engagement of your exidting customers for your online business.</p>
+              <span class="service-index">04</span>
+              <div class="icon"><i class="bx bx-mobile-alt"></i></div>
+              <h4 class="title"><a href="#contact">Mobile Application</a></h4>
+              <p class="description">User-friendly Flutter apps that load quickly and give existing customers a reason to come back.</p>
             </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End My Services Section -->
+    </section>
 
-    <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container position-relative">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-head light">
+          <span class="kicker">03 — Kind words</span>
+          <h2>People I’ve <em>shipped with</em></h2>
+        </div>
+        <div class="testimonials-slider swiper">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/IMG-20191101-WA0019.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/IMG-20191101-WA0019.jpg" class="testimonial-img" alt="Bhavya">
                 <h3>Bhavya</h3>
-                <h4>Ceo &amp; Founder of Avayayath Group</h4>
+                <h4>CEO & Founder, Avayayath Group</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Experience with Pranav was excellent.One of the best freelance web developer and Logo designer in
-                  kerala.He maintain steady and high quality services as compared to others.
+                  Experience with Pranav was excellent. One of the best freelance web developers and logo designers in Kerala. He maintains steady, high-quality work compared to others.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/shyamsk01.jpg" class="testimonial-img" alt="">
-                <h3>Shyam </h3>
-                <h4>CEO of SK Photography</h4>
+                <img src="assets/img/testimonials/shyamsk01.jpg" class="testimonial-img" alt="Shyam">
+                <h3>Shyam</h3>
+                <h4>CEO, SK Photography</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  We really appreciate on freelance web service of Pranav.He have done an excellent job for us.A good
-                  creative web is done for us. <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  We really appreciate Pranav’s freelance web work. He did an excellent job for us — a creative site we’re proud of.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/sj.png" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/sj.png" class="testimonial-img" alt="Sreejith">
                 <h3>Sreejith</h3>
                 <h4>SJ Owner</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Excellent, working with Pranav was great. Thanks to his knowledge and determination our Logo looks
-                  great and really good.
+                  Excellent — working with Pranav was great. Thanks to his knowledge and determination our logo looks sharp.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
 
-    <!-- ======= My Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
-
-        <div class="section-title">
-          <span>My Portfolio</span>
-          <h2>My Portfolio</h2>
+        <div class="section-head">
+          <span class="kicker">04 — Selected work</span>
+          <h2>Apps, sites, <em>& marks</em></h2>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
@@ -418,262 +275,217 @@
         </ul>
 
         <div class="row portfolio-container">
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/sk3.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/sk3.png" class="img-fluid" alt="SK Photography"></div>
             <div class="portfolio-info">
-              <h4>Sk Photography</h4>
-              <p>web</p>
-              <a href="assets/img/portfolio/sk3.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Sk Photography"><i class="bx bx-plus"></i></a>
+              <h4>SK Photography</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/sk3.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SK Photography"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/app5.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/app5.jpeg" class="img-fluid" alt="Delivery Partner"></div>
             <div class="portfolio-info">
               <h4>Delivery Partner</h4>
               <p>App</p>
-              <a href="assets/img/app5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="Delivery Partner"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/app5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Delivery Partner"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
-          <!-- new -->
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/cooking_app.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/cooking_app.png" class="img-fluid" alt="Cooking App"></div>
             <div class="portfolio-info">
               <h4>Cooking App</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/cooking_app.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Cooking App"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/cooking_app.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Cooking App"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/education app.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/education app.png" class="img-fluid" alt="Adam Education App"></div>
             <div class="portfolio-info">
               <h4>Adam Education App</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/education app.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Adam Education App"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/education app.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Adam Education App"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/matrimony_app.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/matrimony_app.png" class="img-fluid" alt="Manaporutham Matrimony"></div>
             <div class="portfolio-info">
               <h4>Manaporutham Matrimony</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/matrimony_app.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Manaporutham Matrimony"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/matrimony_app.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Manaporutham Matrimony"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/one_freezone_app.png" class="img-fluid" alt="">
-            </div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/one_freezone_app.png" class="img-fluid" alt="One Freezone App"></div>
             <div class="portfolio-info">
               <h4>One Freezone App</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/one_freezone_app.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="One Freezone App"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/one_freezone_app.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="One Freezone App"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/pet_app.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/pet_app.png" class="img-fluid" alt="Clan of Pets"></div>
             <div class="portfolio-info">
               <h4>Clan of Pets</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/pet_app.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Clan of Pets"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/pet_app.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Clan of Pets"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/vivera_chat_App.png" class="img-fluid" alt="">
-            </div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/vivera_chat_App.png" class="img-fluid" alt="Vivera Chat App"></div>
             <div class="portfolio-info">
               <h4>Vivera Chat App</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/vivera_chat_App.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Vivera Chat App"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/vivera_chat_App.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Vivera Chat App"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/vivera_education_app.png" class="img-fluid"
-                alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/vivera_education_app.png" class="img-fluid" alt="Vivera Education App"></div>
             <div class="portfolio-info">
               <h4>Vivera Education App</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/vivera_education_app.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Vivera Education App"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/vivera_education_app.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Vivera Education App"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/zoco.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/zoco.png" class="img-fluid" alt="Zoco App"></div>
             <div class="portfolio-info">
               <h4>Zoco App</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/zoco.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Zoco App"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/zoco.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Zoco App"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-          <!-- new end -->
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/sk.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/sk.png" class="img-fluid" alt="SK Photography site"></div>
             <div class="portfolio-info">
-              <h4>Sk Photography</h4>
+              <h4>SK Photography</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/sk.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Sk Photography"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/sk.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SK Photography"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/3.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/3.png" class="img-fluid" alt="Baskin Robbins"></div>
             <div class="portfolio-info">
-              <h4>Baskkin Robbins</h4>
+              <h4>Baskin Robbins</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/3.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Baskkin Robbins"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/3.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Baskin Robbins"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/app4.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/app4.jpeg" class="img-fluid" alt="Netflix Clone"></div>
             <div class="portfolio-info">
               <h4>Netflix Clone</h4>
               <p>App</p>
-              <a href="assets/img/app4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="Netflix Clone"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/app4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Netflix Clone"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/sj.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/sj.jpg" class="img-fluid" alt="SJ Logo"></div>
             <div class="portfolio-info">
-              <h4>Logo</h4>
-              <p>SJ</p>
-              <a href="assets/img/sj.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="LOGO"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>SJ Logo</h4>
+              <p>Identity</p>
+              <a href="assets/img/sj.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="SJ Logo"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/milma.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/milma.jpg" class="img-fluid" alt="Milma"></div>
             <div class="portfolio-info">
               <h4>Milma</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/milma.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Milma"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/milma.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Milma"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/zom1.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/zom1.png" class="img-fluid" alt="Zomato"></div>
             <div class="portfolio-info">
               <h4>Zomato</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/zom1.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Zomato"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/zom1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Zomato"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/vp_logo.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/vp_logo.webp" class="img-fluid" alt="PV Logo"></div>
             <div class="portfolio-info">
               <h4>PV</h4>
               <p>Logo</p>
-              <a href="assets/img/vp_logo.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="LOGO 1"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/vp_logo.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="PV Logo"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/br1.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/br1.png" class="img-fluid" alt="Baskin Robbins"></div>
             <div class="portfolio-info">
-              <h4>Baskkin Robbins</h4>
+              <h4>Baskin Robbins</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/br1.png" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Baskkin Robbins"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/br1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Baskin Robbins"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/app1.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/app1.jpeg" class="img-fluid" alt="WhatsApp clone"></div>
             <div class="portfolio-info">
-              <h4>Whatsapp clone</h4>
+              <h4>WhatsApp clone</h4>
               <p>App</p>
-              <a href="assets/img/app1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="Whatsapp clone"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/app1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="WhatsApp clone"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/app2.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/app2.jpeg" class="img-fluid" alt="Tournament Lotting"></div>
             <div class="portfolio-info">
               <h4>Tournament Lotting</h4>
               <p>App</p>
-              <a href="assets/img/app2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="Tournament Lotting"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/app2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Tournament Lotting"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/app3.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/app3.jpeg" class="img-fluid" alt="Flight Booking"></div>
             <div class="portfolio-info">
               <h4>Flight Booking</h4>
               <p>App</p>
-              <a href="assets/img/app3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
-                title="Flight Booking"><i class="bx bx-plus"></i></a>
-              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/app3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Flight Booking"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End My Portfolio Section -->
+    </section>
 
-
-    <!-- ======= My Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
-
-        <div class="section-title">
-          <span>My Resume</span>
-          <h2>My Resume</h2>
-          <p>Professional Mobile App Developer</p>
+        <div class="section-head">
+          <span class="kicker">05 — Resume</span>
+          <h2>The paper <em>trail</em></h2>
+          <p>Professional mobile app developer — download or read it here.</p>
         </div>
 
-        <!-- PDF Viewer Container -->
         <div class="row justify-content-center mb-4">
           <div class="col-lg-10">
             <div class="card">
               <div class="card-body p-0">
-                <!-- PDF Viewer -->
-                <embed src="assets/pranav_flutter_developer_resume.pdf" type="application/pdf" width="100%"
-                  height="800px" style="border: none;" />
+                <embed src="assets/pranav_flutter_developer_resume.pdf" type="application/pdf" width="100%" height="800px" style="border: none;" />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Download Button -->
         <div class="row justify-content-center mb-5">
           <div class="col-lg-8 text-center">
             <a href="assets/pranav_flutter_developer_resume.pdf" download class="btn btn-primary btn-lg">
@@ -681,243 +493,131 @@
             </a>
           </div>
         </div>
-
       </div>
-    </section><!-- End My Resume Section -->
+    </section>
 
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Pricing</span>
-          <h2>Pricing</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <h3>Logo</h3>
-              <h4><sup>$</sup>250</h4>
-              <ul>
-                <li>Creative Design</li>
-                <li>Wordmark</li>
-                <li>Lettermark</li>
-                <li>Picturemark</li>
-                <li>3 Logos</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Hire Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured">
-              <h3>Static Website</h3>
-              <h4><sup>$</sup>500</h4>
-              <ul>
-                <li>For Small Business</li>
-                <li>Free Domain </li>
-                <li>6 Month Free Support</li>
-                <li>Free Mail Id</li>
-                <li class="na">More Pages</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Hire Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <h3>Dynamic Website</h3>
-              <h4><sup>$</sup>750</h4>
-              <ul>
-                <li>For Large Bussiness</li>
-                <li>Free Domain</li>
-                <li>1 Year Free Support</li>
-                <li>Free Mail</li>
-                <li>More than Five Pages</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Hire Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Mobile App</h3>
-              <h4><sup>$</sup>1000</h4>
-              <ul>
-                <li>For any Bussiness</li>
-                <li>Free Database</li>
-                <li>Free  Mail Id</li>
-                <li>1 Year free Support</li>
-                <li>App with free Website</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Hire Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Pricing Section -->
-
-    <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-
-        <div class="section-title">
-          <span>Contact Me</span>
-          <h2>Contact Me</h2>
-          <p>Hi,If you are here that means you need a website,app or logo.Feel free to ask any questions.</p>
+        <div class="section-head">
+          <span class="kicker">06 — Contact</span>
+          <h2>Let’s make <em>something</em></h2>
+          <p>Need a website, app, or logo? Ask anything — I’ll get back to you.</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-12">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="row g-3">
+              <div class="col-12">
                 <div class="info-box">
                   <i class="bx bx-share-alt"></i>
-                  <h3>Social Profiles</h3>
+                  <h3>Social</h3>
                   <div class="social-links">
-                    <a href="https://twitter.com/PranavP19994078" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://www.facebook.com/pranav.hilarikanz/" class="facebook"><i
-                        class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/pranav_pv_28/profilecard/?igsh=NWEydDkyc3R0Yjhz"
-                      class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/pranav-pv-10266b236/" class="linkedin"><i
-                        class="bx bxl-linkedin"></i></a>
+                    <a href="https://twitter.com/PranavP19994078" class="twitter" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.facebook.com/pranav.hilarikanz/" class="facebook" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/pranav_pv_28/profilecard/?igsh=NWEydDkyc3R0Yjhz" class="instagram" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pranav-pv-10266b236/" class="linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="info-box mt-4">
+                <div class="info-box">
                   <i class="bx bx-envelope"></i>
-                  <h3>Email Me</h3>
-                  <p>pranavpv257@gmail.com</p>
+                  <h3>Email</h3>
+                  <p><a href="mailto:pranavpv257@gmail.com">pranavpv257@gmail.com</a></p>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="info-box mt-4">
+                <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Call Me</h3>
-                  <p>+91 7034888756</p>
+                  <h3>Call</h3>
+                  <p><a href="tel:+917034888756">+91 7034888756</a></p>
                 </div>
               </div>
             </div>
-
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <form action="" id="submit-form" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="6" placeholder="Tell me about the project" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit"></a> Send Message</button></div>
+              <div class="text-center"><button type="submit">Send message</button></div>
             </form>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Contact Me Section -->
+    </section>
+  </main>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Pranav Pv</h3>
-      <p>Hi,If you are here that means you need a website,app or logo.Feel free to ask any questions.</p>
+      <div class="footer-top">
+        <h3>Pranav PV</h3>
+        <p>Flutter, the web, and identity — from Kerala.</p>
+      </div>
       <div class="social-links">
-        <a href="https://twitter.com/PranavP19994078" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/pranav.hilarikanz/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/hilarikanz/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/pranav-pv-10266b236/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/PranavP19994078" class="twitter" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/pranav.hilarikanz/" class="facebook" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/pranav_pv_28/" class="instagram" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pranav-pv-10266b236/" class="linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>PRANAV PV</span></strong>. All Rights Reserved
+        &copy; <span id="year"></span> <strong>Pranav PV</strong>. All rights reserved.
       </div>
-      <div class="credits">
-        Designed by <a href="#">Pranav Pv</a>
-      </div>
+      <div class="credits">Designed by Pranav PV</div>
     </div>
   </footer>
-  <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script>
-    const toggleBtn = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-
-    // Check for saved user preference
-    if (localStorage.getItem('theme') === 'dark') {
-      body.classList.add('dark-mode');
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-
-      // Save preference
-      if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-      } else {
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     const bubble = document.getElementById('bubble');
+    const finePointer = window.matchMedia('(pointer: fine)').matches;
 
-    // 1. Move the bubble with the mouse
-    window.addEventListener('mousemove', (e) => {
-      // We use requestAnimationFrame for high performance (60fps)
-      requestAnimationFrame(() => {
-        bubble.style.left = `${e.clientX}px`;
-        bubble.style.top = `${e.clientY}px`;
+    if (finePointer && bubble) {
+      document.body.classList.add('has-bubble');
+      window.addEventListener('mousemove', (e) => {
+        requestAnimationFrame(() => {
+          bubble.style.left = `${e.clientX}px`;
+          bubble.style.top = `${e.clientY}px`;
+        });
       });
-    });
-
-    // 2. Add 'Grow' effect on links/buttons
-    const interactiveElements = document.querySelectorAll('a, button, .btn-scroll');
-
-    interactiveElements.forEach((el) => {
-      el.addEventListener('mouseenter', () => {
-        bubble.classList.add('bubble-grow');
+      document.querySelectorAll('a, button, .btn-scroll').forEach((el) => {
+        el.addEventListener('mouseenter', () => bubble.classList.add('bubble-grow'));
+        el.addEventListener('mouseleave', () => bubble.classList.remove('bubble-grow'));
       });
-      el.addEventListener('mouseleave', () => {
-        bubble.classList.remove('bubble-grow');
+    }
+  </script>
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault();
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbzLGfz3JcSn4nFkgm7tk2dilaNxde7W-jxvSyS_kuXRI9F4OvdDHjNjndx7McluAuYWJg/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function () {
+          alert("Form submitted successfully");
+          window.location.reload();
+        },
+        error: function () {
+          alert("Something went wrong. Please try again.");
+        }
       });
     });
   </script>
@@ -929,10 +629,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
